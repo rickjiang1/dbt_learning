@@ -1,0 +1,29 @@
+Git hub
+
+cd path/to/your/project
+git init
+
+--Create a .gitignore File if need
+echo "dbt_packages/" >> .gitignore
+echo "target/" >> .gitignore
+echo "logs/" >> .gitignore
+echo "*.dbt" >> .gitignore
+
+git add .
+git commit -m "Initial commit of dbt project"
+git remote add origin https://github.com/yourusername/my-dbt-project.git
+git branch -M main
+git push -u origin main
+
+
+If files updated or added:
+git add .
+git commit -m "Add new orders model"
+git push
+
+
+if files deleted:
+git add .
+git commit -m "Delete file.sql because it's no longer needed"
+git push
+
