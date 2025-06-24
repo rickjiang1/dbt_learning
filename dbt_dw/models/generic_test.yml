@@ -1,0 +1,30 @@
+models:
+  - name: Orders_stg
+    description: this is a test of date
+    columns:
+      - name : ORDER_DATE
+        tests:
+          - date_year_gt_1900
+
+  - name: Customer_order_int
+    columns:
+      - name : customer_id
+        tests:
+          - relationships:
+              to: ref('Customer_stg')
+              field: customer_id  
+          
+  - name: Customer_stg
+    columns:
+      - name : SEGMENTATION
+        tests:
+          - accepted_values:
+              values: ['HOUSEHOLD','BUILDING','MACHINERY','FURNITURE','AUTOMOBILE']
+
+      - name : ACCOUNTBALANCE
+        tests:
+          - is_float
+
+      - name : CUSTOMER_NAME
+        tests:
+          - string_not_empty

@@ -1,0 +1,21 @@
+sources:
+  - name: landing                          # Logical name used in dbt for this source group
+    description: this is global identifier
+    database: DBT_PRACTICE                # Actual database in Snowflake
+    schema: PUBLIC                     # Schema where raw tables live
+    tables:
+      - name: CUSTOMER_SRC                        # dbt reference name
+        identifier: CUSTOMER              # Actual table name in Snowflake
+
+      - name: ORDERS_SRC
+        identifier: ORDERS
+
+      - name: NATION_SRC
+        identifier: NATION
+
+      - name: LINEITEM_SRC
+        identifier: LINEITEM
+
+      - name: SUPPLIER_SRC
+        identifier: SUPPLIER
+
