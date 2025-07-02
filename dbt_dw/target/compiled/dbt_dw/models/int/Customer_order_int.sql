@@ -1,0 +1,4 @@
+SELECT
+c.*
+FROM DBT_PRACTICE.DBT_L2_STG.Customer_stg C LEFT JOIN
+        DBT_PRACTICE.DBT_L2_STG.Orders_stg O ON c.customer_id=O.CUSTOMER_ID
