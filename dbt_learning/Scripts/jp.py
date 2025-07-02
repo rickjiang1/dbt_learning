@@ -1,4 +1,4 @@
-#!E:\dbt_practice\dbt_learning\Scripts\python.exe
+#!C:\dbt_practice\dbt_learning\Scripts\python.exe
 
 import sys
 import json

@@ -1,0 +1,8 @@
+cd C:\dbt_practice\dbt_learning
+py -m venv dbt_learning
+.\dbt_learning\Scripts\Activate.ps1
+pip install dbt-snowflake
+
+
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
