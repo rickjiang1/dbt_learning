@@ -1,0 +1,11 @@
+1. Define tests
+
+2. Add documentation
+
+3. Define sources
+
+4. Define metrics (in dbt v1.2+ with the metrics feature)
+
+5. Define exposures
+
+6. Control metadata for dbt docs
